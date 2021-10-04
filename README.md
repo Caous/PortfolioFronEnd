@@ -20,7 +20,7 @@ Projeto tem finalidade de envolver diversos tipos de templates e páginas para u
 ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=for-the-badge&logo=CSS3)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=for-the-badge&logo=javascript)
 
-### <h5> [Web 🌐]</h5>
+### <h5> [Web 🌐]
 ![Google](https://img.shields.io/badge/Google-000000?style=for-the-badge&logo=Google)
 
 
