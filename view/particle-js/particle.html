@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>NavBar</title>
+    <title>Particle</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="overview &amp; stats" />
@@ -67,23 +67,45 @@
     </nav>
 
 
-    <section class="text-center-page ">
-        <section class="row">
-            <section class="col-lg-12">
-                <img src="../../img/developer.png" width="50%" alt="Imagem usuário de login" />
-            </section>
-            <section class="col-lg-12">
-                <h1>Fala Devs</h1>
-                <h5>Bem-Vindo a mais uma página de exemplos</h5>
+
+    <!-- particles.js container -->
+    <section id="particles-js" style="min-height: 600px; background-color: black;">
+        <section class=" text-center-page">
+            <section class="row">
+                <section class="col-lg-12">
+                    <img src="../../img/developer.png" width="50%" alt="Imagem usuário de login" />
+                </section>
+                <section class="col-lg-12">
+                    <h1>Fala Devs</h1>
+                    <h5>Bem-Vindo a mais uma página de exemplos</h5>
+                </section>
             </section>
         </section>
     </section>
+
+
 
     <!-- Carregando JS -->
 
     <script src="../../js/jquery-3.6.0.min.js"></script>
 
     <script src="../../js/bootstrap.min.js"></script>
+
+
+
+    <!-- scripts -->
+    <script src="../../js/particle_js/particles.js"></script>
+    <script src="../../js/particle_js/app.js"></script>
+
+    <!-- stats.js -->
+    <script src="../../js/particle_js/lib/stats.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            particleJs.load('particles-js')
+        });
+    </script>
 
 </body>
 
