@@ -13,6 +13,7 @@ body {
     -o-background-size     : cover;
     background-size        : cover;
     text-align             : center;
+    
 
 }
 
@@ -49,6 +50,14 @@ hr {
 
 .bg-conhecimento {
     background           : url(../img/codigo.jpg);
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+}
+
+.bg-career {
+    background           : url(../img/career.jpg);
     background-attachment: fixed;
     background-position  : center;
     background-repeat    : no-repeat;

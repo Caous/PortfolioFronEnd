@@ -20,7 +20,55 @@
 
     <link rel="stylesheet" href="assets/font-awesome-4.5.0-master/css/font-awesome.min.css" />
 
-   
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container_img_title {
+            position: relative;
+            /* width: 50%;
+            max-width: 300px; */
+        }
+
+
+        .overlay_title {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            /* Black see-through */
+            color: #f1f1f1;
+            width: 100%;
+            transition: .5s ease;
+            opacity: 0;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container_img_title:hover .overlay_title {
+            opacity: 1;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-50px);
+            }
+        }
+
+        .img_arround_down {
+            animation: bounce 0.8s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -33,7 +81,11 @@
                     <h1>bem-vindo as grandes ideias começaram de pequena ações</h1>
                     <hr>
                     <h5>Espero que encontre oque deseja clique na seta</h5>
-                    <img src="img/arrow_down_double.png" width="5%" href="#teste">
+                    <!-- <img src="img/arrow_down_double.png" width="5%" href="#teste"> -->
+                    <!-- <button class="btn btn-sm btn-info" type="button" href="#teste">Teste</button> -->
+                    <div class="img_arround_down p-5" >
+                        <a class="" id="link_start" href="#teste"><img src="img/arrow_down_double.png" width="5%"></a>
+                    </div>
                 </section>
             </section>
         </section>
@@ -62,7 +114,7 @@
                         <a class="nav-link active text-white" href="#">Execute Tech</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Portfólios</a>
+                        <a class="nav-link text-white" href="#">Projetos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Conhecimentos</a>
@@ -127,68 +179,68 @@
     <section class="bg-conhecimento">
         <section class="d-flex justify-content-center bd-highlight mb-3">
             <section class="p-2 bd-highlight" style="text-align: justify;">
-                <h1>Conhecer é poder</h1>
+                <h1 class="text-uppercase f-weight-400">Conhecer é poder</h1>
 
             </section>
 
         </section>
         <section class="d-flex justify-content-center bd-highlight mb-3 flex-wrap">
-            <div class="d-flex bd-highlight">
+            <section class="d-flex bd-highlight">
                 <section class="p-2 bd-highlight">
                     <section class="p-2 bd-highlight flex-fill">
-                        <div class="d-flex flex-row bd-highlight mb-3">
-                            <div class="p-2 bd-highlight"><img src="img/CSHARP.png" width="200vh"></div>
-                            <div class="p-2 bd-highlight">
+                        <section class="d-flex flex-row bd-highlight mb-3">
+                            <section class="p-2 bd-highlight"><img src="img/CSHARP.png" width="200vh"></section>
+                            <section class="p-2 bd-highlight">
                                 <p>Desbloqueio da habilidade na <br>linguagem de programação csharp</p>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                     </section>
                     <section class="p-2 bd-highlight flex-fill">
-                        <div class="d-flex flex-row bd-highlight mb-3">
-                            <div class="p-2 bd-highlight"><img src="img/java.png" width="200vh"></div>
-                            <div class="p-2 bd-highlight">
+                        <section class="d-flex flex-row bd-highlight mb-3">
+                            <section class="p-2 bd-highlight"><img src="img/java.png" width="200vh"></section>
+                            <section class="p-2 bd-highlight">
                                 <p>Desbloqueio da habilidade na <br>linguagem de programação csharp</p>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                     </section>
                     <section class="p-2 bd-highlight flex-fill">
-                        <div class="d-flex flex-row bd-highlight mb-3">
-                            <div class="p-2 bd-highlight"><img src="img/python.png" width="200vh"></div>
-                            <div class="p-2 bd-highlight">
+                        <section class="d-flex flex-row bd-highlight mb-3">
+                            <section class="p-2 bd-highlight"><img src="img/python.png" width="200vh"></section>
+                            <section class="p-2 bd-highlight">
                                 <p>Desbloqueio da habilidade na <br>linguagem de programação csharp</p>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                     </section>
                 </section>
-            </div>
-            <div class="d-flex bd-highlight">
+            </section>
+            <section class="d-flex bd-highlight">
                 <section class="p-2 bd-highlight">
                     <section class="p-2 bd-highlight flex-fill">
-                        <div class="d-flex flex-row bd-highlight mb-3">
-                            <div class="p-2 bd-highlight"><img src="img/sql.png" width="200vh"></div>
-                            <div class="p-2 bd-highlight">
+                        <section class="d-flex flex-row bd-highlight mb-3">
+                            <section class="p-2 bd-highlight"><img src="img/sql.png" width="200vh"></section>
+                            <section class="p-2 bd-highlight">
                                 <p>Desbloqueio da habilidade na <br>linguagem de programação csharp</p>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                     </section>
                     <section class="p-2 bd-highlight flex-fill">
-                        <div class="d-flex flex-row bd-highlight mb-3">
-                            <div class="p-2 bd-highlight"><img src="img/aws.png" width="200vh"></div>
-                            <div class="p-2 bd-highlight">
+                        <section class="d-flex flex-row bd-highlight mb-3">
+                            <section class="p-2 bd-highlight"><img src="img/aws.png" width="200vh"></section>
+                            <section class="p-2 bd-highlight">
                                 <p>Desbloqueio da habilidade na <br>linguagem de programação csharp</p>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                     </section>
                     <section class="p-2 bd-highlight flex-fill">
-                        <div class="d-flex flex-row bd-highlight mb-3">
-                            <div class="p-2 bd-highlight"><img src="img/github.png" width="200vh"></div>
-                            <div class="p-2 bd-highlight">
+                        <section class="d-flex flex-row bd-highlight mb-3">
+                            <section class="p-2 bd-highlight"><img src="img/github.png" width="200vh"></section>
+                            <section class="p-2 bd-highlight">
                                 <p>Desbloqueio da habilidade na <br>linguagem de programação csharp</p>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                     </section>
                 </section>
-            </div>
+            </section>
 
         </section>
         <section class="d-flex justify-content-center bd-highlight ">
@@ -200,8 +252,73 @@
         </section>
     </section>
 
+    <!-- Projetos -->
+
+    <section class="p-3" style="background-color: #141c5b;">
+        <section class="row">
+            <section class="col-sm-2 p-3" style="border-right: 4px solid #FFF;">
+                <h1 class="text-uppercase f-weight-400">Projetos</h1>
+                <p class="f-weight-350" style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Animi earum ratione quis, repudiandae
+                    tempora harum, voluptatem sit quisquam perferendis cum delectus sequi a. Vitae commodi dolore
+                    consequatur provident quidem alias!</p>
+            </section>
+            <section class="col-sm-10 p-3">
+                <section class="row">
+                    <section class="col-sm-4 col-lg-4 p-1">
+                        <section class="container_img_title">
+                            <img src="img/linguagem-de-programação.jpg"
+                                style="display: block; width: 100%; height: auto; border-radius: 5px; box-shadow         : 6px 6px 0.5em rgba(202, 202, 202, 0.247);" >
+                            <section class="overlay_title">My Name is John</section>
+                        </section>
+                    </section>
+                    <section class="col-sm-3 col-lg-3 p-1">
+                        <section class="container_img_title"
+                            style="box-shadow         : 6px 6px 1em rgba(202, 202, 202, 0.247);">
+                            <img src="img/img_teste_one.jpg"
+                                style="display: block; width: 100%; height: auto; border-radius: 5px;">
+                            <section class="overlay_title">My Name is John</section>
+                        </section>
+                    </section>
+                    <section class="col-sm-5 col-lg-5 p-1">
+                        <section class="container_img_title"
+                            style="box-shadow         : 6px 6px 1em rgba(202, 202, 202, 0.247);">
+                            <img src="img/img_teste_tree.jpg"
+                                style="display: block; width: 100%; height: auto; border-radius: 5px;">
+                            <section class="overlay_title">My Name is John</section>
+                        </section>
+                    </section>
+                    <section class="col-sm-5 col-lg-5 p-1">
+                        <section class="container_img_title"
+                            style="box-shadow         : 6px 6px 1em rgba(202, 202, 202, 0.247);">
+                            <img src="img/img_teste_two.jpg"
+                                style="display: block; width: 100%; height: auto; border-radius: 5px;">
+                            <section class="overlay_title">My Name is John</section>
+                        </section>
+                    </section>
+                    <section class="col-sm-4 col-lg-4 p-1">
+                        <section class="container_img_title"
+                            style="box-shadow         : 6px 6px 1em rgba(202, 202, 202, 0.247);">
+                            <img src="img/hackercomputador.jpg"
+                                style="display: block; width: 100%; height: auto; border-radius: 5px;">
+                            <section class="overlay_title">My Name is John</section>
+                        </section>
+                    </section>
+                    <section class="col-sm-3 col-lg-3 p-1">
+                        <section class="container_img_title"
+                            style="box-shadow         : 6px 6px 1em rgba(202, 202, 202, 0.247);">
+                            <img src="img/codigo.jpg"
+                                style="display: block; width: 100%; height: auto; border-radius: 5px;">
+                            <section class="overlay_title">My Name is John</section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
     <!-- Carreira -->
-    <section class="p-3" style="background-color: #46028b;">
+    <section class="p-3 bg-career" style="background-color: #46028b;">
 
         <section class="d-flex justify-content-center bd-highlight mb-3">
             <section class="p-2 bd-highlight">
@@ -209,9 +326,9 @@
             </section>
         </section>
 
-        <div class="timeline">
-            <div class="container_time_line left">
-                <div class="content">
+        <section class="timeline">
+            <section class="container_time_line left">
+                <section class="content">
                     <h2>Curso técnico</h2>
                     <h4>Senac Largo Treze - Técnico de Informática <span>[2017 - 2018]</span></h4>
                     <p>
@@ -226,10 +343,10 @@
                         paguei meu próprio curso tive a oportunidade e dei a cara a tapa para meus professores, onde
                         consegui estágios e freelancers no segundo semestre do curso.
                     </p>
-                </div>
-            </div>
-            <div class="container_time_line right">
-                <div class="content">
+                </section>
+            </section>
+            <section class="container_time_line right">
+                <section class="content">
                     <h2>Action Cargo</h2>
                     <h4>Desenvolvedor .Net <span>[2018 - 2020]</span></h4>
                     <p>
@@ -244,10 +361,10 @@
                         estagiário e fui efetivado 3 meses após minha entrada, consegui destacar meus conhecimentos em
                         programação e como lidar com usuário, deste o levantamento do projeto até mesmo sua manutenção.
                     </p>
-                </div>
-            </div>
-            <div class="container_time_line left">
-                <div class="content">
+                </section>
+            </section>
+            <section class="container_time_line left">
+                <section class="content">
                     <h2>Faculdade</h2>
                     <h4>Análise Desenvolvimento de Sistemas <span>[2019 - 2021]</span></h4>
                     <p>
@@ -261,10 +378,10 @@
                     </p>
                     <p>Entrei na faculdade para expandir meus conhecimentos e criar network.
                     </p>
-                </div>
-            </div>
-            <div class="container_time_line right">
-                <div class="content">
+                </section>
+            </section>
+            <section class="container_time_line right">
+                <section class="content">
                     <h2>Indra Company</h2>
                     <h4>Desenvolvedor .Net para o Banco Itaú e Rede <span>[2018 - 2020]</span></h4>
                     <p>
@@ -279,10 +396,10 @@
                         estagiário e fui efetivado 3 meses após minha entrada, consegui destacar meus conhecimentos em
                         programação e como lidar com usuário, deste o levantamento do projeto até mesmo sua manutenção.
                     </p>
-                </div>
-            </div>
-            <div class="container_time_line left">
-                <div class="content">
+                </section>
+            </section>
+            <section class="container_time_line left">
+                <section class="content">
                     <h2>Execute Tech</h2>
                     <h4>Instagram</h4>
                     <p>
@@ -295,9 +412,9 @@
                         estagiário e fui efetivado 3 meses após minha entrada, consegui destacar meus conhecimentos em
                         programação e como lidar com usuário, deste o levantamento do projeto até mesmo sua manutenção.
                     </p>
-                </div>
-            </div>
-        </div>
+                </section>
+            </section>
+        </section>
     </section>
 
     <!-- Me conheça -->
@@ -305,24 +422,30 @@
         <section class="d-flex justify-content-center bd-highlight mb-3 flex-wrap">
             <section class="p-2 bd-highlight text-justify">
                 <h4 class="text-uppercase f-weight-400">Me conheça</h4>
-                <p class="f-weight-350"><i class="fa fa-pencil" aria-hidden="true"></i> No momento que assumo minha ignorancia que não sei de nada, passo a me permitir aprender</p>
-                <p class="f-weight-350">Sobre nosso mundo de TI acredito que a técnologia ao mesmo tempo que nos conecta com as pessoas<br>
+                <p class="f-weight-350"><i class="fa fa-pencil" aria-hidden="true"></i> No momento que assumo minha
+                    ignorancia que não sei de nada, passo a me permitir aprender</p>
+                <p class="f-weight-350">Sobre nosso mundo de TI acredito que a técnologia ao mesmo tempo que nos conecta
+                    com as pessoas<br>
                     nos deixa longe delas porque neste momento que vemos como a tecnologia nos conecta em mundo
                     virtual<br>
                     podemos ver também que deixamos de lado coisas simples, como poder ajudar o próximo a ingressar a
                     área</p>
-                <p class="f-weight-350">No momento em que assumo minha ignorancia que não sei nada, neste momento me abro para ouvir o
+                <p class="f-weight-350">No momento em que assumo minha ignorancia que não sei nada, neste momento me
+                    abro para ouvir o
                     mundo<br>
                     e neste momento estou apto para aprender e saber cultivar esse entendimento</p>
-                <p class="f-weight-350">Acredito que a vida é uma dadiva que precisa ser conquistada, independente de onde esteja<br>
+                <p class="f-weight-350">Acredito que a vida é uma dasectiona que precisa ser conquistada, independente
+                    de onde esteja<br>
                     dificuldade que esteja passando basta ter força de vontade, e um segredo que não te contam procure
                     pessoas que estejam<br>
                     ao seu lado para te ajudar.
                 </p>
-                <p class="f-weight-350">Meritocracia deve ser conquistada caso eu não veja que isso ocorra eu sempre irei procurar<br>o
-                    melhor para mim porque a final somos indiduos individuais</p>
-                <p class="f-weight-350"> <i class="fa fa-globe" aria-hidden="true" style="color: green;"></i> Nacionalidade: Brasileiro<br> <i class="fa fa-map-marker" aria-hidden="true"
-                    style="color: #000;"></i> Morando na região sul de São Paulo próximo ao Morumbi
+                <p class="f-weight-350">Meritocracia deve ser conquistada caso eu não veja que isso ocorra eu sempre
+                    irei procurar<br>o
+                    melhor para mim porque a final somos indiduos insectioniduais</p>
+                <p class="f-weight-350"> <i class="fa fa-globe" aria-hidden="true" style="color: green;"></i>
+                    Nacionalidade: Brasileiro<br> <i class="fa fa-map-marker" aria-hidden="true"
+                        style="color: #000;"></i> Morando na região sul de São Paulo próximo ao Morumbi
                 </p>
 
             </section>
@@ -394,6 +517,33 @@
     <script src="js/jquery-3.6.0.min.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("#link_start").on('click', function (event) {
+                console.log('Ativou')
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 
 </body>
 
